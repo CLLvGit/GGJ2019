@@ -69,8 +69,8 @@ public class GameManagerMain : MonoBehaviour
     {
         if (state == GameState.Playing)
         {
-            moneyText.text = "Time:" + LeftTime.ToString();
-            timeText.text = "Money" + Money.ToString();
+//            moneyText.text = "Time:" + LeftTime.ToString();
+//            timeText.text = "Money" + Money.ToString();
             LeftTime -= Time.deltaTime;
             if (LeftTime <= 0 || Money <= 0)
                 GameFailed();
